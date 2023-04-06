@@ -24,8 +24,11 @@ public class Cat {
     }
 
     public void eat(Plate plate) {
-        plate.decreaseFood(appetite);
-        hungry = false;
-        System.out.println(name + " покушал");
+        if (plate.decreaseFood(appetite)) {
+            hungry = false;
+            System.out.println(name + " покушал");
+        } else {
+            System.out.println("Недостаточно еды в тарелке");
+        }
     }
 }

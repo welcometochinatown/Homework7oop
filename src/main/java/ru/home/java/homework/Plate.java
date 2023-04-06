@@ -7,11 +7,12 @@ public class Plate {
         this.food = food;
     }
 
-    public void decreaseFood(int amount) {
-        if (food > 0) {
+    public boolean decreaseFood(int amount) {
+        if (food >= amount) {
             food -= amount;
+            return true;
         } else {
-            System.out.println("Кот не может съесть больше чем в тарелке есть еды, добавим еды");
+            return false;
         }
     }
 

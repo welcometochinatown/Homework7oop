@@ -23,7 +23,7 @@ public class MainApp {
         с помощью которого можно было бы добавлять еду в тарелку
         */
 
-        Plate plate = new Plate(10);
+        Plate plate = new Plate(12);
         Cat[] cats = {
                 new Cat("Barsik"),
                 new Cat("Murzik"),
