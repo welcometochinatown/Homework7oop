@@ -31,8 +31,8 @@ public class MainApp {
         };
 
         for (Cat c: cats) {
-            c.eat(plate);
             plate.info();
+            c.eat(plate);
         }
     }
 }

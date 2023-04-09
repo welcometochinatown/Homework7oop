@@ -5,10 +5,6 @@ public class Cat {
     private int appetite;
     private boolean hungry;
 
-    public void setHungry(boolean hungry) {
-        this.hungry = hungry;
-    }
-
     public int getAppetite() {
         return appetite;
     }
