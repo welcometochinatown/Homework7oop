@@ -30,9 +30,9 @@ public class MainApp {
                 new Cat("Smoke")
         };
 
-        for (Cat c: cats) {
+        for (Cat cat: cats) {
             plate.info();
-            c.eat(plate);
+            cat.eat(plate);
         }
     }
 }

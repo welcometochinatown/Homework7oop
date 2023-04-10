@@ -11,9 +11,8 @@ public class Plate {
         if (food >= amount) {
             food -= amount;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public void addFood(int amount) {
